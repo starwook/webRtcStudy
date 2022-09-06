@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>webRtc 실습</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    </head>
+    <body>
+
+        <div id="video-chat-lobby">
+            <h2 class="text">webRtc 실습</h2>
+            <input id="roomName" type="text" placeholder="실제로는 초대받아서 들어감" />
+            <button id="join">방 입장하기</button>
+            <input id="makeRoom" type="text" placeholder="만들고 싶은 방 이름"/>
+            <button id ="makeBtn">방 만들기</button>
+        </div>
+
+
+        <div id="video-chat-room">
+            <video id="user-video"></video>
+            <video id="peer-video"></video>
+        </div>
+
+    </body>
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script src="/chat.js"></script>
+</html>
